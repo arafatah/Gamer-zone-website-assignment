@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;600;700;800;900&display=swap');
+
+/* Shared styles */
+*{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header{
+    /* padding: 38px 240px; */
+}
+
+.nav{
+    display: flex;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 240px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 20px;
+}
+
+.nav ul{
+    display: flex;
+    
+}
+
+.nav li, .nav li a{
+    list-style: none;  
+    
+    text-decoration: none;
+    margin-right: 32px;
+    
+}
+
+/* banner styles here */
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 240px;
+    align-items: center;
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    
+
+}
+
+.banner-container .sub-title{
+    
+}
+
+.banner-container .title
+
+
+
+

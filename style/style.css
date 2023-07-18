@@ -164,4 +164,58 @@ header{
 
 /* Online game style here */
 
-.online-game-title
+online-game{
+    padding: 0px 240px;
+}
+
+.online-game-title{
+    color: #0B0223;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.span-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.online-game-description{
+    color: #534C64;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.online-game-img-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 24px;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.image-text img {
+    margin-bottom: 10px;
+}
+
+.image-text p {
+    margin: 0;
+    padding: 0;
+    text-align:justify;
+    width: 330px;
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+}

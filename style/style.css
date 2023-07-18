@@ -211,11 +211,100 @@ online-game{
 }
 
 .image-text p {
-    margin: 0;
+    margin-top: 15px;
     padding: 0;
     text-align:justify;
-    width: 330px;
+    width: 320px;
     color: #534C64;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
 }
+
+/* gaming style here */
+
+.gaming{
+    display: flex;
+    padding: 120px 240px 120px 400px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gaming-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: right;
+    margin-bottom: 24px;
+}
+
+.span-game-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gaming-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.gaming-text{
+    margin-right: 265px;
+    margin-bottom: 60px;
+}
+
+.img-shake{
+    position: absolute;
+    right: 700px;
+    margin-top: 470px;
+    
+}
+
+.gaming-2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 120px 250px 120px 240px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.gaming-title-2{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.span-game-title-2{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gaming-description-2{
+    color: #534C64;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.gaming-text-2{
+    margin-left: 265px;
+    margin-bottom: 60px;
+}
+
+.img-shake-2{
+    position: absolute;
+    right: 805px;
+    margin-top: 530px;
+    
+}
+

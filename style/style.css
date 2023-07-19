@@ -43,6 +43,45 @@ header{
     font-weight: 700;
 }
 
+.list-first li{
+    position: relative;
+    list-style: none;  
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-right: 32px;
+}
+
+.list-first{
+    display: flex;
+    position: relative;
+    right: 360px;
+    top: 18px;
+}
+.list-second{
+    display: flex;
+    position: relative;
+    left: -31px;
+    bottom: 18px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    border: none;
+    
+}
+
+.list-second li{
+    list-style: none;  
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 12px;
+    
+}
+
+.list-second>li a{
+    padding: 12px;
+    padding-right: 0px;
+}
+
 .G{
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     background-clip: text;
@@ -64,7 +103,7 @@ header{
     
 }
 
-.nav li, .nav li a{
+.nav li a{
     list-style: none;  
     font-size: 1.25rem;
     text-decoration: none;
@@ -442,12 +481,33 @@ footer p{
     *
     {overflow-x: hidden;}
     .nav, 
-    .list>ul,
-    .banner,.online-game-img-container, .gaming, .gaming-2{
+    .list-first,
+    .banner,
+    .online-game-img-container,
+    .gaming, 
+    .gaming-2,
+    .list-second{
         flex-direction: column;
         
     }
 
+    .list-first{
+        position: static;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .list-second{
+        position: static;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        
+    }
+
+    .list-second li{
+        text-align: center;
+        display: flex;
+    }
     .nav{
         padding: 0;
         margin: 0;
@@ -461,6 +521,12 @@ footer p{
        
     }
 
+    .gaming-img-container{
+        width: 462px;
+        height: 490px;
+        margin-right: 154px;
+    }
+
     .img-shake{
         width: 220px;
         height: 241px;
@@ -469,9 +535,18 @@ footer p{
         margin-top: 892px;
     }
 
+    
     .gaming-img-container-2 img{
-        width: 391px;
-        height: 362px;
+        width: 378px;
+        height: 384px;
+    }
+
+    .img-shake-2{
+        width: 220px;
+        height: 241px;
+        position: absolute;
+        right: 329px;
+        margin-top: 759px;
     }
 
     .gaming-text-2{
@@ -565,171 +640,121 @@ footer p{
 
 @media screen and (min-width:576px) and (max-width:778px){
     
+    .nav,
+    .banner,
+    .gaming,
+    .gaming-2,
+    .banner-opt-container,
+    .menu-container > ul,
+    .logo-container > ul,
+    .terms-container > ul {
+        padding: 0;
+    }
+
     .nav {
-        padding: 24px;
-      }
-    
-      .nav h3 {
-        font-size: 2rem;
-      }
-    
-      .nav li,
-      .nav li a {
-        font-size: 1rem;
-        margin-right: 16px;
-      }
-    
-      /* Update banner styles */
-      .banner {
-        padding: 0px 24px;
-      }
-    
-      .banner-container .sub-title {
-        font-size: 2rem;
-      }
-    
-      .banner-container .title {
-        font-size: 4.375rem;
-      }
-    
-      /* Update banner optional styles */
-      .banner-opt-container {
-        
-        padding: 32px 24px;
-      }
-    
-      .banner-opt-title {
-        font-size: 2.5rem;
-      }
-    
-      .banner-opt-description {
-        font-size: 1rem;
-        margin-bottom: 24px;
-      }
-    
-      .banner-opt button {
-        margin-bottom: 16px;
-      }
-    
-      .banner .p1 {
-        font-size: 1.25rem;
-      }
-    
-      .banner-opt .p2 {
-        font-size: 1.5rem;
-      }
-    
-      /* Update online game styles */
-      .online-game {
-        padding: 0px 24px;
-      }
-    
-      .online-game-title {
-        font-size: 2rem;
-        margin-bottom: 12px;
-      }
-    
-      .online-game-description {
-        font-size: 1rem;
-        margin-bottom: 24px;
-      }
-    
-      .online-game-img-container {
-        flex-wrap: wrap;
-      }
-    
-      .image-text p {
-        width: 100%;
-      }
-    
-      /* Update gaming styles */
-      .gaming {
-        padding: 80px 24px 80px 32px;
-      }
-    
-      .gaming-title {
-        font-size: 2rem;
-        line-height: 48px;
-        text-align: left;
-      }
-    
-      .gaming-description {
-        font-size: 1rem;
-      }
-    
-      .gaming-text {
-        margin-right: 0;
-        margin-bottom: 40px;
-      }
-    
-      .img-shake {
-        right: auto;
-        left: 32px;
-        margin-top: 350px;
-      }
-    
-      .gaming-2 {
         flex-direction: column;
-        padding: 80px 24px;
-      }
+        padding: 20px;
+    }
+
     
-      .gaming-title-2 {
-        font-size: 2rem;
-        line-height: 48px;
-        text-align: center;
-      }
-    
-      .gaming-description-2 {
-        font-size: 1rem;
-        text-align: center;
-      }
-    
-      .gaming-text-2 {
+    .list-second {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        left: 138px;
+        bottom: 29px;
+    }
+    .list-first{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        right: 217px;
+        top: 18px;
+    }
+    .list-first li,
+    .list-second li {
+        margin-right: 15px;
+    }
+
+    .banner {
+        padding: 20px;
+        background-image: none;
+    }
+
+    .img-container img{
+        display: none;
+    }
+
+    .banner-opt-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .gaming,
+    .gaming-2 {
+        padding: 60px 20px;
+    }
+
+    .gaming-text,
+    .gaming-text-2 {
+        margin-right: 0;
         margin-left: 0;
-        margin-bottom: 40px;
-      }
-    
-      .img-shake-2 {
-        right: auto;
-        left: 32px;
-        margin-top: 350px;
-      }
-    
-      /* Update button area styles */
-      .names {
-        padding: 60px 24px 80px 24px;
-      }
-    
-      .names button {
-        font-size: 1rem;
-      }
-    
-      /* Update footer styles */
-      footer {
-        padding-bottom: 32px;
-      }
-    
-      .footer-title h3 {
-        font-size: 2.25rem;
-      }
-    
-      .menu-container > ul > li a {
-        margin-right: 32px;
-        font-size: 1rem;
-      }
-    
-      .terms-container > ul > li a {
-        margin-right: 32px;
-        font-size: 0.875rem;
-      }
-    
-      footer p {
-        font-size: 0.875rem;
-        padding-bottom: 80px;
-      }
-    }.banner-opt-container
-    
-    
-    
-    
+        text-align: center;
+    }
+
+    .img-shake,
+    .img-shake-2 {
+        position: static;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .online-game-img-container,
+    .gaming-img-container,
+    .gaming-img-container-2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gaming-img-container img, .gaming-img-container-2 img{
+        display: none;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+    .menu-container > ul,
+    .logo-container > ul,
+    .terms-container > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-container > ul > li,
+    .logo-container > ul > li,
+    .terms-container > ul > li {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .footer-title {
+        padding-top: 60px;
+    }
+
+    .footer-title h3 {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+
+    footer p {
+        padding-bottom: 60px;
+    }
+}
 }

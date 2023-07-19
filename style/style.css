@@ -319,16 +319,18 @@ online-game{
     align-items: center;
     justify-content: center;
 }
-.button-container{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    align-items: center;
-    
+.names{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
     padding: 100px 280px 120px 240px;
+    gap: 25px;
+    
+    
 }
 
-.button-container button{
+.names button{
     border-radius: 50px;
     background: #ffffff;
     border: none;
@@ -339,18 +341,9 @@ online-game{
     align-items: center;
     margin-bottom: 19px;
     border: none;
-    
-    
+   
 }
 
-.button-container button a{
-    text-decoration: none;
-      
-}
-
-.button-container img{
-    margin-right: 20px;
-}
 
 
 

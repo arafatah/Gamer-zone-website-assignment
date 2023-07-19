@@ -344,6 +344,81 @@ online-game{
    
 }
 
+.btn a{
+    text-decoration: none;
+}
+
+.btn img{
+    margin-right: 10px;
+}
+
+/* footer style */
+footer{
+    background: #0B0223;
+}
+
+.footer-title, .menu-container>ul, .logo-container>ul, .terms-container>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title{
+    padding-top: 120px;
+    padding-bottom: 56px;
+}
+
+.footer-title h3{
+    margin-left: 15px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.81rem;
+    font-weight: 700;
+}
+
+.menu-container>ul>li a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    
+}
+
+.menu-container>ul{
+    padding-bottom: 70px;
+}
+
+.logo-container>ul>li a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.logo-container>ul{
+    padding-bottom: 60px;
+}
+
+.terms-container>ul>li a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.terms-container{
+    padding-bottom: 50px;
+}
 
 
+footer p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 130px;
+}
 

@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;600;700;800;900&display=swap');
-body{
-    
-}
+
 /* Shared styles */
 *{
     margin: 0;
     font-family: 'Work Sans', sans-serif;
-    overflow-x: hidden;
+    
 }
 
 .btn-primary{

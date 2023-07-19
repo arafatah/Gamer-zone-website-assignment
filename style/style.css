@@ -31,7 +31,22 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 38px 240px;
-    
+}
+
+.nav h3{
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    color: #0B0223;
+    font-size: 2.85rem;
+    font-weight: 700;
+}
+
+.G{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo{
@@ -50,7 +65,7 @@ header{
 
 .nav li, .nav li a{
     list-style: none;  
-    
+    font-size: 1.25rem;
     text-decoration: none;
     margin-right: 32px;
     
@@ -422,3 +437,58 @@ footer p{
     padding-bottom: 130px;
 }
 
+@media screen and (max-width:576px) {
+    .nav, 
+    .list>ul,
+    .banner,.online-game-img-container, .gaming, .gaming-2{
+        flex-direction: column;
+        
+    }
+
+    .nav{
+        padding: 131px;
+        padding-right: 90px;
+        width: 420px;
+            
+    }
+    .img-container>img{
+        width: 341px;
+        height: 300px;
+       
+    }
+
+    .img-shake{
+        width: 220px;
+        height: 241px;
+        position: absolute;
+        right: 319px;
+        margin-top: 892px;
+    }
+
+    .gaming-img-container-2 img{
+        width: 391px;
+        height: 362px;
+    }
+
+    .banner{
+        padding: 10px;
+        background-image: none;
+    }
+    .banner-opt-container{
+        flex-direction: column-reverse;
+        padding: 5px;
+    }
+
+    .text-content{
+        text-align: center;
+        padding: 0px;
+    }
+
+    .gaming-img-container img{
+        width: 462px;
+        height: 490px;
+        margin-right: 154px;
+    }
+    
+    
+}

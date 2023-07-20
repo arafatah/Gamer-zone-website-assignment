@@ -477,6 +477,24 @@ footer p{
     padding-bottom: 130px;
 }
 
+.online-hover:hover{
+    filter: brightness(50%);
+    outline: #ff8e8e solid 3px;
+    border-radius: 1.2rem;
+    
+}
+
+.btn-hover:hover{
+    color: #F948B2;
+    border: 2px solid #F948B2;
+    border-radius: 50px;
+}
+
+.btn a:hover{
+    color: #F948B2;
+}
+
+
 @media screen and (max-width:576px) {
     *
     {overflow-x: hidden;}
